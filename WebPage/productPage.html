@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--    <meta http-equiv="refresh" content="1">   -->
+
+    <!-- import css style file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css imports -->
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+
+    <!-- bootstrap javascript imports-->
+    <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
+    <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>La Redoute</title>
+
+</head>
+
+<body>
+    <!-- header start-->
+    <header class="section-header">
+        <section class="header-main border-bottom bg-white">
+            <div class="container-fluid">
+                <div class="row p-2 pt-3 pb-3 d-flex align-items-center">
+                    <!--logo and search bar-->
+                    <div class="col-md-3">
+                        <a href="index.html"> <img class="d-none d-md-flex" src="fotos/logo.png" width="200"></a>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex form-inputs"> <input class="form-control" type="text" placeholder="Pesquisar..."> <i class="bx bx-search"></i> </div>
+                    </div>
+                    <!-- icons-->
+                    &emsp;&emsp;&emsp;
+                    <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/mailboxIcon.png"></a>
+                    &emsp;&emsp;&emsp;
+                    <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/userIcon.png"></a>
+                    &emsp;&emsp;&emsp;
+                    <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/heartIcon.png"></a>
+                    &emsp;&emsp;&emsp;
+                    <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/bagIcon.png"></a>
+                </div>
+            </div>
+        </section>
+        <!-- categorias -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a class="nav-link active" href="#">Moda</a> </li>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <li class="nav-item"> <a class="nav-link active" href="#">Casa</a> </li>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <li class="nav-item"> <a class="nav-link active" href="#">Eletrodoméstico</a> </li>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;
+                    <li class="nav-item"> <a class="nav-link active" href="#">Magazine de Tendências</a> </li>
+                </ul>
+            </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <hr>
+    <a href="index.html" style="color:grey;">
+        <p><small>&nbsp; La Redoute / Móveis / Mesas</small></p>
+    </a>
+
+    <!--threeJS -->
+    <div class="row">
+        <!-- left column ( iluminacao & animacoes controls )-->
+        <div class="col-md-2">
+            <h3 style="text-align: center;">Iluminação</h3>
+            <div style="text-align: center;">
+                <button class="button buttonCircle " id="buttonChangeLightRed" style="background-color: red;">&emsp;</button>
+                <button class="button buttonCircle " id="buttonChangeLightPurple" style="background-color: purple;">&emsp;</button>
+                <button class="button buttonCircle " id="buttonChangeLightGreen" style="background-color: green;">&emsp; </button>
+                <button class="button buttonCircle " id="buttonChangeLightWhite" style="background-color: white;">&emsp; </button>
+            </div>
+            <hr>
+            <h3 style="text-align: center;">Animações</h3>
+            <div style="text-align: center;">
+                <ul>
+                    <li><button type="button" id="buttonAbrirGaveta" class="btn btn-default">Abrir gaveta</button></li>
+                    <li><button type="button" id="buttonFecharGaveta" class="btn btn-default">Fechar gaveta</button></li>
+                    <li><button type="button" id="buttonEstenderMesa" class="btn btn-default">Estender mesa</button></li>
+                    <li><button type="button" id="buttonFecharMesa" class="btn btn-default">Fechar mesa</button></li>
+                </ul>
+            </div>
+        </div>
+        <!-- center column ( canvas )-->
+        <div class="col-md-5">
+            <div class="container">
+                <canvas id="meuCanvas"></canvas>
+            </div>
+
+        </div>
+        
+<!-- right column ( product info & colors & textures )-->
+<div class="col-md-4">
+    <h3>LA REDOUTE INTERIEURS</h3>
+    <h5><b>Mesa secretária</b></h5>
+    <div class="row">
+        <a href="#" style="color:grey;">
+            <p>ver descrição</p>
+        </a>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>&nbsp;
+        <p> (6 avaliações)</p>
+    </div>
+    <div class="row">
+        <img src="fotos/workBench.png" width="150px" height="auto">
+
+        <ul>
+            <h5>Alterar cor da Madeira</h5>
+            <li><button class="button buttonCircle" id="buttonChangeColorGrey" style="background-color: grey;">&emsp;</button>&emsp;Cinzento</li>
+            <li><button class="button buttonCircle" id="buttonChangeColorRed" style="background-color: red;">&emsp;</button>&emsp;Vermelho</li>
+            <li><button class="button buttonCircle" id="buttonChangeColorYellow" style="background-color: yellow;">&emsp;</button>&emsp;Amarelo</li>
+            <li><button class="button buttonCircle" id="buttonChangeColorOriginal" style="background-color: rgb(82, 20, 20);">&emsp;</button>&emsp;Cor Original</li>
+        </ul>
+    </div>
+    <hr>
+    <p>Material/Textura da Mesa</p>
+    <div class="row">
+
+        <button class="button buttonTextura" id="buttonGranito">Granito</button>&emsp;
+        <button class="button buttonTextura" id="buttonMarmoreCastanho">Mármore Castanho</button>&emsp;
+        <button class="button buttonTextura" id="buttonMarmore">Mármore Branco</button>&emsp;
+        <button class="button buttonTextura" id="buttonOriginalWood">Madeira Original</button>&emsp;
+    </div>
+    <hr>
+    <h6>Quantidade 1</h6>
+    <h4><b>1635.25€</b></h4>
+    <button class="buttonCompra">Juntar ao carrinho</button>
+
+    <br><br><br><br><br><br>
+        </div>
+    </div>
+    <script src="./../../node_modules/three/build/three.min.js"></script>
+    <script src="./../../node_modules/three/examples/js/controls/OrbitControls.js"></script>
+    <script src="./../../node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+
+    <script src="main.js"></script>
+
+    <!--end of threeJS-->
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/truckIcon.jpg"></a>
+            </div>
+            <div class="col-md-3">
+                <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/boxIcon.PNG"></a>
+            </div>
+            <div class="col-md-3">
+                <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/clockIcon.jpg"></a>
+            </div>
+            <div class="col-md-3">
+                <a class="nav-link active" href="#"><img width="50px" height="auto" src="fotos/lockIcon.jpg"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">Envio Grátis*</div>
+            <div class="col-md-3">Trocas & Devoluções</div>
+            <div class="col-md-3">Contacte-nos</div>
+            <div class="col-md-3">Pagamento seguro</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

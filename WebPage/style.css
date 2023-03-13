@@ -1,0 +1,73 @@
+body {
+    background-color: purple
+}
+    
+.form-inputs {
+    position: relative
+}
+    
+    .form-inputs .form-control {
+        height: 45px
+    }
+    
+    .form-inputs .form-control:focus {
+        box-shadow: none;
+        border: 1px solid #000
+    }
+    
+    .form-inputs i {
+        position: absolute;
+        right: 10px;
+        top: 15px
+    }
+    
+    .shop-bag {
+        background-color: #000;
+        color: #fff;
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center
+    }
+    
+.qty {
+    font-size: 12px
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.buttonCircle {
+    border-radius: 50%;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .buttonTextura {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+  }
+  
+  .buttonTextura:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .buttonCompra {
+      width: 50%;
+      background-color: black;
+      color: white;
+    }
