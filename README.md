@@ -7,6 +7,7 @@ A project with the objective of getting familiar with the "**Three.js**" JavaScr
 ## Video demonstration
 
 https://user-images.githubusercontent.com/76527448/224738519-9582c8c5-9b3f-4e72-ab15-fac69cbf9314.mp4
+
 Here we can see the user changing the lighting, both materials the furniture is made of, rotating the 3D model, and opening and closing the movable parts with an animation.
 
 
