@@ -1,14 +1,13 @@
 # 3DfurnitureWebsite
 
 ## What is this project?
-A project with the objective of getting familiar with the "**Three.js**" javascript library and the application "**Blender**", with the purpose of displaying a 3D image on a webpage which can be interacted with.
+A project with the objective of getting familiar with the "**Three.js**" JavaScript library and the application "**Blender**", with the purpose of displaying a 3D image on a webpage which can be interacted with.
 
 
-## VIdeo demonstration
+## Video demonstration
 
 https://user-images.githubusercontent.com/76527448/224738519-9582c8c5-9b3f-4e72-ab15-fac69cbf9314.mp4
-
-
+Here we can see the user changing the lighting, both materials the furniture is made of, rotating the 3D model, and opening and closing the movable parts with an animation.
 
 
 
@@ -19,7 +18,7 @@ the landing page, purely for demonstration reasons, with the only functionality 
 
 
 ![2](https://user-images.githubusercontent.com/76527448/224729997-354ba78b-04aa-43d7-8a53-8131fe95b108.PNG)
-the display of a 3D object which is fully interactible with using the mouse or the buttons to change it's appearence(lightning, material, opening and closing animations, etc).
+the display of a 3D object which is fully interactable with using the mouse or the buttons to change its appearance (lighting, material, opening and closing animations, etc).
 
 
 
@@ -31,5 +30,5 @@ the same item with a different lightning and material, with the door open and th
 
 
 ## How to run
-To run the webpage during development, the "Live Server" extention in Visual Studio Code was used. 
+To run the webpage during development, the "Live Server" extension in Visual Studio Code was used. 
 It is also needed to install the Three.js dependencies before running the project inside of "Webpage" the folder.
